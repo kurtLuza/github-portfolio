@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurt Luza — IT & Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header id="site-header">
+        <nav class="nav-inner">
+            <span class="logo">KL<span class="logo-dot">.</span></span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="dark-mode-toggle" aria-label="Toggle theme">
+                    <span class="toggle-icon">☀️</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">kurt@portfolio ~ </span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">$</span> <span class="cmd" id="typed-cmd"></span><span
+                            class="cursor">▌</span></p>
+                    <p class="terminal-output" id="typed-output"></p>
+                </div>
+            </div>
+            <h1 class="hero-heading">Hi, I'm <span class="accent">Kurt Luza</span></h1>
+            <p class="hero-sub">Full-Stack Developer & IT Professional — building reliable systems and clean interfaces,
+                one commit at a time.</p>
+            <div class="hero-actions">
+                <a href="#experience" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-bg-grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-inner">
+            <span class="section-label">About</span>
+            <h2 class="section-heading">Who I Am</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a BS Information Technology student at <strong>Mapúa Malayan Colleges Laguna</strong>,
+                        currently interning at <strong>Concentrix</strong>. My focus spans full-stack web development
+                        with <strong>Django, Vue.js, and FastAPI</strong>, as well as IT networking and support
+                        operations.</p>
+                    <p>I've delivered real-world projects for clients across web design, automation, and platform
+                        development — I enjoy working across the stack and understanding how systems connect end-to-end.
+                    </p>
+                </div>
+                <ul class="skills-list">
+                    <li class="skill-tag">Python / Django / FastAPI</li>
+                    <li class="skill-tag">Django REST Framework</li>
+                    <li class="skill-tag">Vue.js</li>
+                    <li class="skill-tag">HTML / CSS / JavaScript</li>
+                    <li class="skill-tag">WordPress</li>
+                    <li class="skill-tag">Selenium / Web Scraping</li>
+                    <li class="skill-tag">Git</li>
+                    <li class="skill-tag">Dropbox SDK</li>
+                    <li class="skill-tag">IT Support Operations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section-inner">
+            <span class="section-label">Experience</span>
+            <h2 class="section-heading">What I've Done</h2>
+            <div class="timeline">
+
+                <article class="exp-card">
+                    <div class="exp-meta">
+                        <span class="exp-client">Prometrics Digital</span>
+                        <span class="exp-badge">Full-Stack</span>
+                    </div>
+                    <h3>Full-Stack Web Developer</h3>
+                    <p class="exp-project">Improvement and enhancement of client's web platform to optimize performance,
+                        UX, and maintainability.</p>
+                    <ul class="exp-duties">
+                        <li>Debugged and resolved front-end and back-end issues to improve performance and reliability
+                        </li>
+                        <li>Implemented responsive front-end components using Vue.js for better user experience</li>
+                        <li>Integrated and optimized Django back-end features to ensure scalability and security</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="tech-chip">Django</span>
+                        <span class="tech-chip">Vue 2</span>
+                        <span class="tech-chip">DRF</span>
+                        <span class="tech-chip">Git</span>
+                    </div>
+                </article>
+
+                <article class="exp-card">
+                    <div class="exp-meta">
+                        <span class="exp-client">Prometrics Digital</span>
+                        <span class="exp-badge">Web Design</span>
+                    </div>
+                    <h3>WordPress / Web Designer</h3>
+                    <p class="exp-project">Multiple Landing Pages — custom WordPress development and responsive design.
+                    </p>
+                    <ul class="exp-duties">
+                        <li>Customized WordPress themes and templates to align with client specifications</li>
+                        <li>Designed visually appealing, user-friendly websites with responsive design principles</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="tech-chip">HTML/CSS</span>
+                        <span class="tech-chip">WordPress</span>
+                    </div>
+                </article>
+
+                <article class="exp-card">
+                    <div class="exp-meta">
+                        <span class="exp-client">Shilohstream</span>
+                        <span class="exp-badge">Automation</span>
+                    </div>
+                    <h3>Python / Django Web Scraping</h3>
+                    <p class="exp-project">Web Scraping Automation — automated data extraction from a client's target
+                        e-commerce site.</p>
+                    <ul class="exp-duties">
+                        <li>Set up data scraping automation for a given e-commerce website</li>
+                        <li>Implemented automatic download/upload of output files using the Dropbox SDK</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="tech-chip">Python</span>
+                        <span class="tech-chip">Selenium</span>
+                        <span class="tech-chip">HTML/CSS</span>
+                        <span class="tech-chip">Dropbox SDK</span>
+                    </div>
+                </article>
+
+                <article class="exp-card">
+                    <div class="exp-meta">
+                        <span class="exp-client">GHL</span>
+                        <span class="exp-badge">Web Design</span>
+                    </div>
+                    <h3>Web Designer</h3>
+                    <p class="exp-project">Landing Pages — designing and delivering client-facing web pages.</p>
+                    <ul class="exp-duties">
+                        <li>Accountable for the design quality and visual consistency of the website</li>
+                        <li>Created webpages that fulfilled client requirements and expectations</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="tech-chip">HTML/CSS</span>
+                        <span class="tech-chip">Web Design</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / CAPSTONE -->
+    <section id="projects">
+        <div class="section-inner">
+            <span class="section-label">Projects</span>
+            <h2 class="section-heading">What I've Built</h2>
+            <div class="projects-grid">
+
+                <article class="project-card featured">
+                    <div class="card-header">
+                        <span class="card-icon">📡</span>
+                        <span class="card-tag">Capstone</span>
+                    </div>
+                    <h3>HopFog — Barangay Communication System</h3>
+                    <p>A HopFog-based system enabling reliable barangay communication <em>without</em> internet or
+                        mobile connectivity. Built the web dashboard for real-time message display, user interaction,
+                        and system monitoring.</p>
+                    <ul class="exp-duties">
+                        <li>Developed and maintained the web dashboard for monitoring the HopFog communication system
+                        </li>
+                        <li>Designed responsive front-end interfaces for real-time message display and user interaction
+                        </li>
+                        <li>Conducted testing and debugging of web functionalities to improve reliability and usability
+                        </li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="tech-chip">FastAPI</span>
+                        <span class="tech-chip">Python</span>
+                        <span class="tech-chip">HTML/CSS/JS</span>
+                        <span class="tech-chip">Git</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="card-icon">⚙️</span>
+                        <span class="card-tag">Backend</span>
+                    </div>
+                    <h3>Django REST API</h3>
+                    <p>Beginner-to-intermediate REST API projects built with Django REST Framework — covering
+                        serializers, viewsets, and authentication.</p>
+                    <div class="card-footer">
+                        <span class="tech-chip">Python</span>
+                        <span class="tech-chip">Django</span>
+                        <span class="tech-chip">DRF</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="card-icon">🖥️</span>
+                        <span class="card-tag">IT Operations</span>
+                    </div>
+                    <h3>IT Operations</h3>
+                    <p>Documenting hands-on internship tasks at Concentrix including hardware testing, VLAN
+                        configuration, and network troubleshooting.</p>
+                    <div class="card-footer">
+                        <span class="tech-chip">Networking</span>
+                        <span class="tech-chip">Hardware</span>
+                        <span class="tech-chip">VLAN</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="section-inner">
+            <span class="section-label">Certifications</span>
+            <h2 class="section-heading">Credentials</h2>
+            <div class="certs-grid">
+
+                <div class="cert-card">
+                    <div class="cert-issuer amazon">
+                        <span class="cert-issuer-icon">🛒</span>
+                        <span>Amazon</span>
+                    </div>
+                    <h3>Full Stack Web Development</h3>
+                    <p class="cert-meta">Issued May 2026 · ID: US0IF0CAC1UQ</p>
+                    <span class="cert-skill-tag">Full-Stack Development</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-issuer google">
+                        <span class="cert-issuer-icon">🔵</span>
+                        <span>Google</span>
+                    </div>
+                    <h3>Google Cloud Computing Foundations</h3>
+                    <p class="cert-meta">Issued Feb 2025 · ID: f13b548b-2dc8-45c7-959a-e362982d33cb</p>
+                    <span class="cert-skill-tag">Cloud Computing</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-issuer google">
+                        <span class="cert-issuer-icon">🔵</span>
+                        <span>Google</span>
+                    </div>
+                    <h3>Foundations: Data, Data, Everywhere</h3>
+                    <p class="cert-meta">Issued Oct 2025 · ID: IAHEQMQABZYO</p>
+                    <span class="cert-skill-tag">Data Analytics</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-issuer cisco">
+                        <span class="cert-issuer-icon">🔷</span>
+                        <span>Cisco Networking Academy</span>
+                    </div>
+                    <h3>CCNA: Introduction to Networks</h3>
+                    <p class="cert-meta">Issued Feb 7, 2025 · Verified</p>
+                    <span class="cert-skill-tag">Networking</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-issuer cisco">
+                        <span class="cert-issuer-icon">🔷</span>
+                        <span>Cisco Networking Academy</span>
+                    </div>
+                    <h3>CCNA: Switching, Routing & Wireless Essentials</h3>
+                    <p class="cert-meta">Issued Jul 21, 2025 · Verified</p>
+                    <span class="cert-skill-tag">Networking</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-issuer cisco">
+                        <span class="cert-issuer-icon">🔷</span>
+                        <span>Cisco Networking Academy</span>
+                    </div>
+                    <h3>Ethical Hacker</h3>
+                    <p class="cert-meta">Issued Mar 29, 2025 · Verified</p>
+                    <span class="cert-skill-tag">Cybersecurity</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-inner contact-inner">
+            <span class="section-label">Contact</span>
+            <h2 class="section-heading">Let's Connect</h2>
+            <p class="contact-sub">Open to opportunities, collaborations, and conversations about tech.</p>
+            <div class="contact-links">
+                <a href="mailto:luzakurt14@gmail.com" class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <span class="contact-type">Email</span>
+                        <span class="contact-value">luzakurt14@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://github.com/kurtLuza" target="_blank" rel="noopener" class="contact-card">
+                    <span class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                        </svg>
+                    </span>
+                    <div>
+                        <span class="contact-type">GitHub</span>
+                        <span class="contact-value">github.com/kurtLuza</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/kurt-eliezer-luza-31481b347/" target="_blank" rel="noopener"
+                    class="contact-card">
+                    <span class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <span class="contact-type">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/kurt</span>
+                    </div>
+                </a>
+                 <a href="https://www.credly.com/users/kurt-eliezer-luza/edit/badges/credly" target="_blank" rel="noopener"
+                    class="contact-card">
+                    <span class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <span class="contact-type">Credly</span>
+                        <span class="contact-value">credly.com/users/kurt-eliezer-luza</span>
+                    </div>
+                </a>
+                <a href="https://docs.google.com/document/d/1V-gHW2j1gNpp5JTIC6ukNCUMPPqI-NgFzu0chI5e_PA/edit?usp=sharing" target="_blank" rel="noopener" class="contact-card">
+                    <span class="contact-icon">📄</span>
+                    <div>
+                        <span class="contact-type">Resume / CV</span>
+                        <span class="contact-value">View Resume</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Kurt Luza. Built with care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
