@@ -21,7 +21,7 @@ const output = document.getElementById('typed-output');
 const cursor = document.querySelector('.cursor');
 
 const command = 'whoami --verbose';
-const response = '→ Kurt Luza | Full-Stack Developer & IT Professional';
+const response = '→ Kurt Luza | Aspiring Full-Stack Developer & IT Professional';
 
 let i = 0;
 let outputStarted = false;

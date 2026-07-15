@@ -1,387 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurt Luza — IT & Web Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurt Luza — Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAV -->
-    <header id="site-header">
-        <nav class="nav-inner">
-            <span class="logo">Kurt Luza<span class="logo-dot">.</span></span>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-right">
-                <button id="dark-mode-toggle" aria-label="Toggle theme">
-                    <span class="toggle-icon">☀️</span>
-                </button>
-            </div>
-        </nav>
-    </header>
+  <!-- NAV -->
+  <header id="site-header">
+    <nav class="nav-inner">
+      <span class="logo">KL<span class="logo-dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#seminars">Seminars</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#capstone">Capstone</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="cv.pdf" download class="btn btn-cv">📄 Download CV</a>
+        <button id="dark-mode-toggle" aria-label="Toggle theme">
+          <span class="toggle-icon">☀️</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-    <!-- HERO -->
-    <section id="hero">
-        <div class="hero-content">
-            <div class="terminal-window">
-                <div class="terminal-bar">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="terminal-title">kurt@portfolio ~ </span>
-                </div>
-                <div class="terminal-body">
-                    <p class="terminal-line"><span class="prompt">$</span> <span class="cmd" id="typed-cmd"></span><span
-                            class="cursor">▌</span></p>
-                    <p class="terminal-output" id="typed-output"></p>
-                </div>
-            </div>
-            <h1 class="hero-heading">Hi, I'm <span class="accent">Kurt Luza</span></h1>
-            <p class="hero-sub">Full-Stack Developer & IT Professional — building reliable systems and clean interfaces,
-                one commit at a time.</p>
-            <div class="hero-actions">
-                <a href="#experience" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-            </div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">kurt@portfolio ~ </span>
         </div>
-        <div class="hero-bg-grid" aria-hidden="true"></div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="section-inner">
-            <span class="section-label">About</span>
-            <h2 class="section-heading">Who I Am</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I'm a BS Information Technology student at <strong>Mapúa Malayan Colleges Laguna</strong>,
-                        currently interning at <strong>Concentrix</strong>. My focus spans full-stack web development
-                        with <strong>Django, and FastAPI</strong>, as well as IT networking and support
-                        operations.</p>
-                    <p>I've delivered real-world projects for clients across web design, automation, and platform
-                        development — I enjoy working across the stack and understanding how systems connect end-to-end.
-                    </p>
-                </div>
-                <ul class="skills-list">
-                    <li class="skill-tag">Python / Django / FastAPI</li>
-                    <li class="skill-tag">Django REST Framework</li>
-                    <li class="skill-tag">HTML / CSS / JavaScript</li>
-                    <li class="skill-tag">WordPress</li>
-                    <li class="skill-tag">Selenium / Web Scraping</li>
-                    <li class="skill-tag">Git</li>
-                    <li class="skill-tag">Dropbox SDK</li>
-                    <li class="skill-tag">IT Support Operations</li>
-                </ul>
-            </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="prompt">$</span> <span class="cmd" id="typed-cmd"></span><span class="cursor">▌</span></p>
+          <p class="terminal-output" id="typed-output"></p>
         </div>
-    </section>
+      </div>
+      <h1 class="hero-heading">Kurt Luza</h1>
+      <p class="hero-sub">BS Information Technology · Mapúa Malayan Colleges Laguna<br>Aspiring Full-Stack Developer & IT Professional</p>
+      <div class="hero-actions">
+        <a href="#software" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <div class="section-inner">
-            <span class="section-label">Experience</span>
-            <h2 class="section-heading">What I've Done</h2>
-            <div class="timeline">
+  <!-- PROGRAMMING SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-label">Programming Skills</span>
+      <h2 class="section-heading">Technical Proficiencies</h2>
+      <div class="skills-categories">
 
-                <article class="exp-card">
-                    <div class="exp-meta">
-                        <span class="exp-client">Chirosoap</span>
-                        <span class="exp-badge">Full-Stack</span>
-                    </div>
-                    <h3>Full-Stack Web Developer</h3>
-                    <p class="exp-project">Improvement and enhancement of client's web platform to optimize performance,
-                        UX, and maintainability.</p>
-                    <ul class="exp-duties">
-                        <li>Debugged and resolved front-end and back-end issues to improve performance and reliability
-                        </li>
-                        <li>Implemented responsive front-end components using Vue.js for better user experience</li>
-                        <li>Integrated and optimized Django back-end features to ensure scalability and security</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="tech-chip">Django</span>
-                        <span class="tech-chip">Vue2</span>
-                        <span class="tech-chip">DRF</span>
-                    </div>
-                </article>
-
-                <article class="exp-card">
-                    <div class="exp-meta">
-                        <span class="exp-client">Prometrics Digital</span>
-                        <span class="exp-badge">Web Design</span>
-                    </div>
-                    <h3>WordPress / Web Designer</h3>
-                    <p class="exp-project">Multiple Landing Pages — custom WordPress development and responsive design.
-                    </p>
-                    <ul class="exp-duties">
-                        <li>Customized WordPress themes and templates to align with client specifications</li>
-                        <li>Designed visually appealing, user-friendly websites with responsive design principles</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="tech-chip">HTML/CSS</span>
-                        <span class="tech-chip">WordPress</span>
-                    </div>
-                </article>
-
-                <article class="exp-card">
-                    <div class="exp-meta">
-                        <span class="exp-client">Shilohstream</span>
-                        <span class="exp-badge">Automation</span>
-                    </div>
-                    <h3>Python / Django Web Scraping</h3>
-                    <p class="exp-project">Web Scraping Automation — automated data extraction from a client's target
-                        e-commerce site.</p>
-                    <ul class="exp-duties">
-                        <li>Set up data scraping automation for a given e-commerce website</li>
-                        <li>Implemented automatic download/upload of output files using the Dropbox SDK</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="tech-chip">Python</span>
-                        <span class="tech-chip">Selenium</span>
-                        <span class="tech-chip">HTML/CSS</span>
-                        <span class="tech-chip">Dropbox SDK</span>
-                    </div>
-                </article>
-
-                <article class="exp-card">
-                    <div class="exp-meta">
-                        <span class="exp-client">GHL</span>
-                        <span class="exp-badge">Web Design</span>
-                    </div>
-                    <h3>Web Designer</h3>
-                    <p class="exp-project">Landing Pages — designing and delivering client-facing web pages.</p>
-                    <ul class="exp-duties">
-                        <li>Accountable for the design quality and visual consistency of the website</li>
-                        <li>Created webpages that fulfilled client requirements and expectations</li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="tech-chip">HTML/CSS</span>
-                        <span class="tech-chip">Web Design</span>
-                    </div>
-                </article>
-
-            </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <ul class="skills-list">
+            <li class="skill-tag">Python</li>
+            <li class="skill-tag">C#</li>
+            <li class="skill-tag">JavaScript</li>
+            <li class="skill-tag">HTML</li>
+            <li class="skill-tag">CSS</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- PROJECTS / CAPSTONE -->
-    <section id="projects">
-        <div class="section-inner">
-            <span class="section-label">Projects</span>
-            <h2 class="section-heading">What I've Built</h2>
-            <div class="projects-grid">
-
-                <article class="project-card featured">
-                    <div class="card-header">
-                        <span class="card-icon">📡</span>
-                        <span class="card-tag">Capstone</span>
-                    </div>
-                    <h3>HopFog — Barangay Communication System</h3>
-                    <p>A HopFog-based system enabling reliable barangay communication <em>without</em> internet or
-                        mobile connectivity. Built the web dashboard for real-time message display, user interaction,
-                        and system monitoring.</p>
-                    <ul class="exp-duties">
-                        <li>Developed and maintained the web dashboard for monitoring the HopFog communication system
-                        </li>
-                        <li>Designed responsive front-end interfaces for real-time message display and user interaction
-                        </li>
-                        <li>Conducted testing and debugging of web functionalities to improve reliability and usability
-                        </li>
-                    </ul>
-                    <div class="card-footer">
-                        <span class="tech-chip">FastAPI</span>
-                        <span class="tech-chip">Python</span>
-                        <span class="tech-chip">HTML/CSS/JS</span>
-                        <span class="tech-chip">Git</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="card-header">
-                        <span class="card-icon">⚙️</span>
-                        <span class="card-tag">Backend</span>
-                    </div>
-                    <h3>Django REST API</h3>
-                    <p>Beginner-to-intermediate REST API projects built with Django REST Framework — covering
-                        serializers, viewsets, and authentication.</p>
-                    <div class="card-footer">
-                        <span class="tech-chip">Python</span>
-                        <span class="tech-chip">Django</span>
-                        <span class="tech-chip">DRF</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="card-header">
-                        <span class="card-icon">🖥️</span>
-                        <span class="card-tag">IT Operations</span>
-                    </div>
-                    <h3>IT Operations</h3>
-                    <p>Documenting hands-on internship tasks at Concentrix including hardware testing, VLAN
-                        configuration, and network troubleshooting.</p>
-                    <div class="card-footer">
-                        <span class="tech-chip">Networking</span>
-                        <span class="tech-chip">Hardware</span>
-                        <span class="tech-chip">VLAN</span>
-                    </div>
-                </article>
-
-            </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Frameworks & Libraries</h4>
+          <ul class="skills-list">
+            <li class="skill-tag">FastAPI</li>
+            <li class="skill-tag">Vue.js</li>
+            <li class="skill-tag">.NET</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications">
-        <div class="section-inner">
-            <span class="section-label">Certifications</span>
-            <h2 class="section-heading">Credentials</h2>
-            <div class="certs-grid">
-
-                <div class="cert-card">
-                    <div class="cert-issuer amazon">
-                        <span class="cert-issuer-icon">🛒</span>
-                        <span>Amazon</span>
-                    </div>
-                    <h3>Full Stack Web Development</h3>
-                    <p class="cert-meta">Issued May 2026 · ID: US0IF0CAC1UQ</p>
-                    <span class="cert-skill-tag">Full-Stack Development</span>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-issuer google">
-                        <span class="cert-issuer-icon">🔵</span>
-                        <span>Google</span>
-                    </div>
-                    <h3>Google Cloud Computing Foundations</h3>
-                    <p class="cert-meta">Issued Feb 2025 · ID: f13b548b-2dc8-45c7-959a-e362982d33cb</p>
-                    <span class="cert-skill-tag">Cloud Computing</span>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-issuer google">
-                        <span class="cert-issuer-icon">🔵</span>
-                        <span>Google</span>
-                    </div>
-                    <h3>Foundations: Data, Data, Everywhere</h3>
-                    <p class="cert-meta">Issued Oct 2025 · ID: IAHEQMQABZYO</p>
-                    <span class="cert-skill-tag">Data Analytics</span>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-issuer cisco">
-                        <span class="cert-issuer-icon">🔷</span>
-                        <span>Cisco Networking Academy</span>
-                    </div>
-                    <h3>CCNA: Introduction to Networks</h3>
-                    <p class="cert-meta">Issued Feb 7, 2025 · Verified</p>
-                    <span class="cert-skill-tag">Networking</span>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-issuer cisco">
-                        <span class="cert-issuer-icon">🔷</span>
-                        <span>Cisco Networking Academy</span>
-                    </div>
-                    <h3>CCNA: Switching, Routing & Wireless Essentials</h3>
-                    <p class="cert-meta">Issued Jul 21, 2025 · Verified</p>
-                    <span class="cert-skill-tag">Networking</span>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-issuer cisco">
-                        <span class="cert-issuer-icon">🔷</span>
-                        <span>Cisco Networking Academy</span>
-                    </div>
-                    <h3>Ethical Hacker</h3>
-                    <p class="cert-meta">Issued Mar 29, 2025 · Verified</p>
-                    <span class="cert-skill-tag">Cybersecurity</span>
-                </div>
-
-            </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Databases & Tools</h4>
+          <ul class="skills-list">
+            <li class="skill-tag">MySQL</li>
+            <li class="skill-tag">Git</li>
+            <li class="skill-tag">Dropbox SDK</li>
+            <li class="skill-tag">WordPress</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="section-inner contact-inner">
-            <span class="section-label">Contact</span>
-            <h2 class="section-heading">Let's Connect</h2>
-            <p class="contact-sub">Open to opportunities, collaborations, and conversations about tech.</p>
-            <div class="contact-links">
-                <a href="mailto:luzakurt14@gmail.com" class="contact-card">
-                    <span class="contact-icon">✉️</span>
-                    <div>
-                        <span class="contact-type">Email</span>
-                        <span class="contact-value">luzakurt14@gmail.com</span>
-                    </div>
-                </a>
-                <a href="https://github.com/kurtLuza" target="_blank" rel="noopener" class="contact-card">
-                    <span class="contact-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
-                        </svg>
-                    </span>
-                    <div>
-                        <span class="contact-type">GitHub</span>
-                        <span class="contact-value">github.com/kurtLuza</span>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/kurt-eliezer-luza-31481b347/" target="_blank" rel="noopener"
-                    class="contact-card">
-                    <span class="contact-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </span>
-                    <div>
-                        <span class="contact-type">LinkedIn</span>
-                        <span class="contact-value">linkedin.com/in/kurt</span>
-                    </div>
-                </a>
-                 <a href="https://www.credly.com/users/kurt-eliezer-luza/edit/badges/credly" target="_blank" rel="noopener"
-                    class="contact-card">
-                    <span class="contact-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </span>
-                    <div>
-                        <span class="contact-type">Credly</span>
-                        <span class="contact-value">credly.com/users/kurt-eliezer-luza</span>
-                    </div>
-                </a>
-                <a href="https://docs.google.com/document/d/1V-gHW2j1gNpp5JTIC6ukNCUMPPqI-NgFzu0chI5e_PA/edit?usp=sharing" target="_blank" rel="noopener" class="contact-card">
-                    <span class="contact-icon">📄</span>
-                    <div>
-                        <span class="contact-type">Resume / CV</span>
-                        <span class="contact-value">View Resume</span>
-                    </div>
-                </a>
-            </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Networking & IT</h4>
+          <ul class="skills-list">
+            <li class="skill-tag">VLAN Configuration</li>
+            <li class="skill-tag">Hardware Troubleshooting</li>
+            <li class="skill-tag">IT Support Operations</li>
+            <li class="skill-tag">Network Fundamentals</li>
+          </ul>
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Kurt Luza. Built with care.</p>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+    <!-- SOFTWARE DEVELOPED -->
+  <section id="software">
+    <div class="section-inner">
+      <span class="section-label">Software Developed · 1st Year to 4th Year</span>
+      <h2 class="section-heading">Machine Problems & Projects</h2>
+
+      <!-- RISTORANTE -->
+      <div class="project-entry">
+        <div class="project-entry-header">
+          <div>
+            <span class="project-year-badge">Machine Problem</span>
+            <h3 class="project-entry-title">RISTORANTE</h3>
+            <p class="project-entry-sub">Web-based restaurant ordering and dashboard system</p>
+          </div>
+          <div class="project-tech-stack">
+            <span class="tech-chip">C#</span>
+            <span class="tech-chip">.NET</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">HTML</span>
+            <span class="tech-chip">CSS</span>
+          </div>
+        </div>
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Discussion of the Features</h4>
+          <ul class="feature-list">
+            <li>Web dashboard that allows users to browse the menu and place orders online</li>
+            <li>Responsive front-end interface designed for ease of use across different screen sizes</li>
+            <li>Back-end order management with MySQL database for storing and retrieving order data</li>
+          </ul>
+        </div>
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Software Used</h4>
+          <div class="card-footer">
+            <span class="tech-chip">C# / .NET</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">HTML / CSS</span>
+            <span class="tech-chip">Visual Studio</span>
+          </div>
+        </div>
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Screenshots of the GUI</h4>
+          <div class="screenshots-grid">
+            <img src="assets/ristorante/screenshot-1.png" alt="RISTORANTE Screenshot 1" class="screenshot-img">
+            <img src="assets/ristorante/screenshot-2.png" alt="RISTORANTE Screenshot 2" class="screenshot-img">
+            <img src="assets/ristorante/screenshot-3.png" alt="RISTORANTE Screenshot 3" class="screenshot-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAPSTONE PROJECT -->
+  <section id="capstone">
+    <div class="section-inner">
+      <span class="section-label">Capstone Project · 4th Year</span>
+      <h2 class="section-heading">HopFog Communication System</h2>
+      <p class="capstone-intro">Development of a HopFog-based system for reliable barangay communication without internet or mobile connectivity.</p>
+
+      <div class="project-entry capstone-entry">
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Discussion of the Features</h4>
+          <ul class="feature-list">
+            <li>Web dashboard for monitoring and managing the HopFog communication system in real time</li>
+            <li>Responsive front-end interfaces for real-time message display and user interaction — accessible without internet connectivity</li>
+            <li>Barangay-level communication layer that operates independently of mobile or internet infrastructure</li>
+            <li>System reliability ensured through thorough testing, debugging, and iterative improvement of web functionalities</li>
+          </ul>
+        </div>
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Software Used</h4>
+          <div class="card-footer">
+            <span class="tech-chip">FastAPI (Python)</span>
+            <span class="tech-chip">HTML / CSS / JavaScript</span>
+            <span class="tech-chip">Git</span>
+            <span class="tech-chip">VS Code</span>
+          </div>
+        </div>
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Hardware Used</h4>
+          <div class="hardware-list">
+            <div class="hardware-item">
+              <span class="hardware-icon">📡</span>
+              <div>
+                <span class="hardware-name">HopFog Nodes</span>
+                <span class="hardware-desc">Mesh communication devices enabling offline barangay connectivity</span>
+              </div>
+            </div>
+            <div class="hardware-item">
+              <span class="hardware-icon">💻</span>
+              <div>
+                <span class="hardware-name">Development Workstation</span>
+                <span class="hardware-desc">Used for coding, testing, and debugging the web dashboard</span>
+              </div>
+            </div>
+            <div class="hardware-item">
+              <span class="hardware-icon">🌐</span>
+              <div>
+                <span class="hardware-name">Local Network Setup</span>
+                <span class="hardware-desc">Local server environment for simulating offline mesh communication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section-block">
+          <h4 class="block-heading">Screenshots of the GUI</h4>
+          <div class="screenshots-grid">
+            <img src="assets/login page.png" alt="HopFog Dashboard View" class="screenshot-img">
+            <img src="assets/dashboard.png" alt="HopFog Message Interface" class="screenshot-img">
+            <img src="assets/logs.png" alt="HopFog System Monitor" class="screenshot-img">
+            <img src="assets/users.png" alt="HopFog System Users" class="screenshot-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="section-inner">
+      <span class="section-label">Certificates</span>
+      <h2 class="section-heading">Credentials & Certifications</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-issuer amazon">
+            <span class="cert-issuer-icon">🛒</span>
+            <span>Amazon</span>
+          </div>
+          <h3>Full Stack Web Development</h3>
+          <p class="cert-meta">Issued May 2026 · ID: US0IF0CAC1UQ</p>
+          <span class="cert-skill-tag">Full-Stack Development</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer google">
+            <span class="cert-issuer-icon">🔵</span>
+            <span>Google</span>
+          </div>
+          <h3>Google Cloud Computing Foundations</h3>
+          <p class="cert-meta">Issued Feb 2025 · ID: f13b548b-2dc8-45c7-959a-e362982d33cb</p>
+          <span class="cert-skill-tag">Cloud Computing</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer google">
+            <span class="cert-issuer-icon">🔵</span>
+            <span>Google</span>
+          </div>
+          <h3>Foundations: Data, Data, Everywhere</h3>
+          <p class="cert-meta">Issued Oct 2025 · ID: IAHEQMQABZYO</p>
+          <span class="cert-skill-tag">Data Analytics</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer cisco">
+            <span class="cert-issuer-icon">🔷</span>
+            <span>Cisco Networking Academy</span>
+          </div>
+          <h3>Ethical Hacker</h3>
+          <p class="cert-meta">Issued Mar 29, 2025 · Verified</p>
+          <span class="cert-skill-tag">Cybersecurity</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer cisco">
+            <span class="cert-issuer-icon">🔷</span>
+            <span>Cisco Networking Academy</span>
+          </div>
+          <h3>CCNA: Introduction to Networks</h3>
+          <p class="cert-meta">Issued Feb 7, 2025 · Verified</p>
+          <span class="cert-skill-tag">Networking</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer cisco">
+            <span class="cert-issuer-icon">🔷</span>
+            <span>Cisco Networking Academy</span>
+          </div>
+          <h3>CCNA: Switching, Routing & Wireless Essentials</h3>
+          <p class="cert-meta">Issued Jul 21, 2025 · Verified</p>
+          <span class="cert-skill-tag">Networking</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEMINARS -->
+  <section id="seminars">
+    <div class="section-inner">
+      <span class="section-label">Seminars</span>
+      <h2 class="section-heading">Seminars & Events Attended</h2>
+      <div class="seminars-grid">
+
+        <div class="seminar-card">
+          <img src="assets/e-certificate_image.jpg" alt="Prosperna: A Journey of Building Your Own Tech Start Up" class="seminar-img">
+          <div class="seminar-body">
+            <span class="seminar-tag">Entrepreneurship</span>
+            <h3>Prosperna: A Journey of Building Your Own Tech Start Up</h3>
+          </div>
+        </div>
+
+        <div class="seminar-card">
+          <img src="assets/Operating System Fundamentals.png" alt="Operating System Fundamentals" class="seminar-img">
+          <div class="seminar-body">
+            <span class="seminar-tag">IT Fundamentals</span>
+            <h3>Operating System Fundamentals</h3>
+          </div>
+        </div>
+
+        <div class="seminar-card">
+          <img src="assets/Digital_transformation.png" alt="Digital Transformation and Smart Information Systems" class="seminar-img">
+          <div class="seminar-body">
+            <span class="seminar-tag">Innovation</span>
+            <h3>Digital Transformation and Smart Information Systems</h3>
+          </div>
+        </div>
+        
+        <div class="seminar-card">
+          <img src="assets/ByC_June27_image.jpg" alt="Beyond the Code: Next-Gen Skills for the Cloud-Native Era" class="seminar-img">
+          <div class="seminar-body">
+            <span class="seminar-tag">Cloud & Career</span>
+            <h3>Beyond the Code: Next-Gen Skills for the Cloud-Native Era</h3>
+          </div>
+        </div>
+
+        <div class="seminar-card">
+          <img src="assets/BTB-CoA_Luza, Kurt_image.jpg" alt="Beyond the Breach: Leadership and Cybersecurity in the Age of Digital Transformation" class="seminar-img">
+          <div class="seminar-body">
+            <span class="seminar-tag">Cybersecurity</span>
+            <h3>Beyond the Breach: Leadership and Cybersecurity in the Age of Digital Transformation</h3>
+          </div>
+        </div>
+
+        <div class="seminar-card">
+          <img src="assets/HitC-CoA_KELLuza_image.jpg" alt="Head in the Clouds: Exploring How AI transforms the CLoud Computing Landscape" class="seminar-img">
+          <div class="seminar-body">
+            <span class="seminar-tag">Head in the Clouds</span>
+            <h3>Head in the Clouds: Exploring How AI transforms the CLoud Computing Landscape</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <span class="section-label">Contact</span>
+      <h2 class="section-heading">Let's Connect</h2>
+      <p class="contact-sub">Open to opportunities, collaborations, and conversations about tech.</p>
+      <div class="contact-links">
+        <a href="mailto:luzakurt14@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <span class="contact-type">Email</span>
+            <span class="contact-value">luzakurt14@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://github.com/kurtLuza" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          </span>
+          <div>
+            <span class="contact-type">GitHub</span>
+            <span class="contact-value">github.com/kurtLuza</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/kurt" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </span>
+          <div>
+            <span class="contact-type">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/kurt</span>
+          </div>
+        </a>
+
+         <a href="https://www.credly.com/users/kurt-eliezer-luza" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zm0 2.5a5 5 0 1 0 0 10A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+          </span>
+          <div>
+            <span class="contact-type">Credly</span>
+            <span class="contact-value">credly.com/users/kurt-luza</span>
+          </div>
+        </a>
+
+        <a href="Luza_Kurt_Resume.pdf" download class="contact-card cv-download">
+          <span class="contact-icon">📄</span>
+          <div>
+            <span class="contact-type">Resume / CV</span>
+            <span class="contact-value">Download PDF</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kurt Luza. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
