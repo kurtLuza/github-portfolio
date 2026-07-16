@@ -915,3 +915,19 @@ footer {
   .screenshots-grid { grid-template-columns: 1fr; }
   .skills-categories { grid-template-columns: 1fr; }
 }
+.subsection-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+
+.subsection-heading + .internship-card,
+.subsection-heading + .timeline {
+  margin-top: 0;
+}
