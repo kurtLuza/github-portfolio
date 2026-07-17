@@ -931,3 +931,6 @@ footer {
 .subsection-heading + .timeline {
   margin-top: 0;
 }
+.decoration{
+  text-decoration: none;
+}
