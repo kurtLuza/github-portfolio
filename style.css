@@ -8,9 +8,9 @@
   --ink: #0B1220;
   --ink-soft: #46526A;
   --line: #CBD5E3;
-  --cable: #1B4DFF;      /* ethernet blue */
-  --cable-ink: #123BD1;  /* darker for text on light */
-  --pulse: #FFC400;      /* packet yellow */
+  --cable: #1B4DFF;     
+  --cable-ink: #123BD1;  
+  --pulse: #FFC400;      
 
   --display: 'Bricolage Grotesque', system-ui, sans-serif;
   --body: 'Figtree', system-ui, sans-serif;
@@ -18,7 +18,6 @@
   --max: 1080px;
 }
 
-/* Dark theme: same structure, inverted surfaces */
 :root[data-theme="dark"] {
   --paper: #0B1220;
   --paper-2: #101A2E;
@@ -70,6 +69,7 @@ ul { list-style: none; }
   text-decoration: none; background: var(--ink); color: var(--paper);
   padding: .1rem .55rem; border-radius: 6px; letter-spacing: .02em;
 }
+.menu-check, .menu-toggle { display: none; }
 .top nav { display: flex; gap: 2rem; font-family: var(--mono); font-size: .8rem; }
 .top nav a { text-decoration: none; color: var(--ink-soft); padding: .25rem 0; border-bottom: 2px solid transparent; }
 .top nav a:hover { color: var(--ink); border-color: var(--cable); }
@@ -228,7 +228,38 @@ footer { border-top: 1px solid var(--line); padding: 1.5rem 0; font-family: var(
   .hero-grid, .cols { grid-template-columns: 1fr; }
   .hero { min-height: 0; padding-top: 3rem; }
   .facts { box-shadow: 6px 6px 0 var(--cable); }
-  .top nav { display: none; }
+  /* Mobile menu: pure CSS. A hidden checkbox remembers open/closed, the label is the button. */
+  .menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-left: auto; width: 2.75rem; height: 2.75rem; cursor: pointer;
+    color: var(--ink); border: 2px solid var(--ink); border-radius: 10px;
+  }
+  .menu-toggle:hover { background: var(--ink); color: var(--paper); }
+  .menu-check {
+    display: block; position: absolute; right: max(1.5rem, calc((100% - var(--max)) / 2 + 1.5rem));
+    width: 2.75rem; height: 2.75rem; opacity: 0; cursor: pointer; margin: 0; z-index: 2;
+  }
+  .menu-check:focus-visible + .menu-toggle { outline: 3px solid var(--cable); outline-offset: 3px; }
+
+  .bars, .bars::before, .bars::after {
+    display: block; width: 1.2rem; height: 2px; background: currentColor; border-radius: 2px;
+    transition: transform .2s, background .2s;
+  }
+  .bars { position: relative; }
+  .bars::before, .bars::after { content: ""; position: absolute; left: 0; }
+  .bars::before { top: -6px; }
+  .bars::after { top: 6px; }
+  .menu-check:checked + .menu-toggle .bars { background: transparent; }
+  .menu-check:checked + .menu-toggle .bars::before { transform: translateY(6px) rotate(45deg); }
+  .menu-check:checked + .menu-toggle .bars::after { transform: translateY(-6px) rotate(-45deg); }
+
+  .top-end { position: absolute; top: 100%; left: 0; right: 0; }
+  .top nav {
+    display: none; flex-direction: column; gap: 0; width: 100%; padding: .5rem 0 1rem;
+    background: var(--paper); border-bottom: 1px solid var(--line);
+  }
+  .menu-check:checked ~ .top-end nav { display: flex; }
+  .top nav a { padding: .9rem 1.5rem; border-bottom: 1px solid var(--line); font-size: .95rem; }
   section { padding: 4rem 0; }
   .rack-row, .job { grid-template-columns: 1fr; gap: .4rem; }
   .certs a { grid-template-columns: 1fr auto; }
