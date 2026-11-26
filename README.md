@@ -1,27 +1,21 @@
-# 🌐 Kurt's Web Portfolio
+# Kurt Luza — Portfolio
 
-Welcome to my personal web portfolio!  
-This project showcases my journey as an **Information Technology student** and **IT Intern at Concentrix**, highlighting my skills, projects, and professional growth.
+A simple one-page portfolio built with plain HTML and CSS, published with GitHub Pages.
 
----
+**Live site:** https://kurtluza.github.io/github-portfolio/
 
-## 🚀 Features
-- **Responsive Design** – Optimized for desktop and mobile viewing.
-- **Project Showcase** – A curated list of academic, internship, and personal projects.
-- **About Me Section** – Background, education, and career goals.
-- **Contact Integration** – Easy ways to connect via email or social platforms.
+## What's on the page
 
----
+- **Hero:** name, a short paragraph about me, a graduation photo, an email link and a CV download
+- **IT skills:** languages, frameworks, and data and tools
+- **Experience:** Serv, Serv-Webapp (full-stack developer) and Shilohstream (web scraping automation)
+- **Projects:** Ristoranti, a .NET and C# app with MySQL
+- **Certifications:** a short list, each linked to its verification page
+- **Contact:** email, GitHub, Credly and CV
 
-## 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript  
-- **Backend:** Django & Django REST Framework  
-- **Version Control:** Git & GitHub  
-- **Other Tools:** Bootstrap, WebSockets (for interactive features)
+## Design
 
----
-
-## 📂 Project Highlights
-- **IT Support Logs** – Documenting tasks like hardware testing, VLAN configuration, and troubleshooting.  
-- **API Development** – Beginner–intermediate projects using Django REST Framework.  
-- **Capstone & Academic Work** – Strategic insights and technical writing refined for professional contexts.
+- Dark theme only, with ethernet-blue and yellow accents
+- Fonts: Bricolage Grotesque, Figtree and IBM Plex Mono (Google Fonts)
+- Responsive: the nav links turn into a hamburger menu below 820px, built with a hidden checkbox and CSS only
+- Accessible: skip-to-content link, visible keyboard focus, reduced-motion support, and semantic HTML
